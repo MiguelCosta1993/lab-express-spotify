@@ -1,6 +1,13 @@
+<div class="container">
+{{#each items}}
+<div class="result">
 <div>
-<img src="{{this.images[0].url}}" alt="">
+<img src="{{images.[0].url}}" alt="">
+<h4>{{name}}</h4>
+<a href="/albums/{{this.id}}">View Albums</a>
+</div>
 
-	<h3>{{this.name}}</h3>
+</div>
 
+{{/each}}
 </div>
